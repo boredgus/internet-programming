@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    padding: 10px;
+}
+*{
+    box-sizing: border-box;
+}
+div{
+    padding: 10px;
+    border: 4px solid green;
+}
+.red{
+    border-color: red;
+}
+.blue{
+    border-color: blue;
+}
+.yellow{
+    border-color: #ffe600;
+}
+.row-item-parent{
+    overflow: auto;
+}
+.row-item{
+    float: left;
+}
+.no-row{
+    clear: both;
+}
+.w20{
+    min-width: 19%;
+    max-width: 20%;
+}
+.w30{
+    min-width: 29%;
+    max-width: 30%;
+}
+.w40{
+    min-width: 39%;
+    max-width: 40%;
+}
+.w70{
+    min-width: 69%;
+    max-width: 70%;
+}
+.h100{
+    height: 100%;
+}
+.h50{
+    height: 50%;
+}
+.h20px{
+    height: 20px;
+}
+.h30px{
+    height: 30px;
+}
+.h50px{
+    height: 50px;
+}
+.h100px{
+    height: 100px;
+}
+.h70px{
+    height: 70px;
+}
+.h350px{
+    height: 350px;
+}
+.h438px{
+    height: 438px;
+}
+
+.mb10px{
+    margin-bottom: 10px;
+}
+.mr13px{
+    margin-right: 14px;
+}
