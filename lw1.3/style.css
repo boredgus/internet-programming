@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 15px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container > div{
+    width: 30%;
+}
+.third .blue{
+    color: blue;
+}
+.third .bold{
+    font-weight: bold;
+}
+.third .italic{
+    font-style: italic;
+}
+.third .small{
+    font-size: small;
+}
