@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>LW1.4</title>
+</head>
+<body>
+    <h1>Form</h1>
+    <form action="./index.html" method="POST" target="_self">
+        <div class="box container">
+            <label for="gender">Type your name:</label>
+            <input type="text" name="name">
+        </div>
+        <div class="box-column container">
+            <label for="gender">Choose gender:</label>
+            <div class="box">
+                <input type="radio" name="gender" value="male">
+                <label for="male">male</label>
+            </div>
+            <div class="box">
+                <input type="radio" name="gender" value="female">
+                <label for="female">female</label>
+            </div>
+        </div>
+        <div class="box container">
+            <label for="course">Select course:</label>
+            <select name="course" id="course">
+                <option selected value="none">none</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+        </div>
+        <div class="box-column container">
+            <label for="message">Enter your message:</label>
+            <textarea name="message"></textarea>
+        </div>
+        <input type="submit" value="Submit" id="submit">
+        <div class="box"></div>
+        <div class="box"></div>
+    </form>
+    <script>
+        window.onload = function () {
+            let form = document.querySelector("form");
+            form.addEventListener("submit", function () {
+                alert(`name: ${form[0].value}\ngender: ${(form[1].value) ? "male" : "female"}\ncourse: ${form[3].value}\nmessage: ${form[4].value}`);
+            })
+            console.dir(form)
+        }
+    </script>
+</body>
+</html>
