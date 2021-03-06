@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE clients SYSTEM "clients.dtd">
+<?xml-stylesheet href="style1.7.css" type="text/css"?>
+<clients>
+    <client>
+        <id>1</id>
+        <initials>
+            <name>Daryna</name>
+            <surname>Kharchenko</surname>
+        </initials>
+        <address>
+            <city>Kyiv</city>
+            <street>Nizhynska</street>
+            <building>29D</building>
+        </address>
+        <passport>
+            <series>RT</series>
+            <number>78675645</number>
+            <taxpayer_number>1234567890</taxpayer_number>
+        </passport>
+    </client>
+    <client>
+        <id>2</id>
+        <initials>
+            <name>Ivan</name>
+            <surname>Ivanov</surname>
+        </initials>
+        <address>
+            <city>Kyiv</city>
+            <street>Petrivska</street>
+            <building>11</building>
+        </address>
+        <passport>
+            <series>PO</series>
+            <number>565656</number>
+            <taxpayer_number>9887765456</taxpayer_number>
+        </passport>
+    </client>
+    <client>
+        <id>3</id>
+        <initials>
+            <name>Petro</name>
+            <surname>Petrov</surname>
+        </initials>
+        <address>
+            <city>Kyiv</city>
+            <street>Lesi Ukrainky</street>
+            <building>89</building>
+        </address>
+        <passport>
+            <series>UU</series>
+            <number>562312</number>
+            <taxpayer_number>9832564323</taxpayer_number>
+        </passport>
+    </client>
+    <client>
+        <id>4</id>
+        <initials>
+            <name>Elizaveta</name>
+            <surname>Pavlova</surname>
+        </initials>
+        <address>
+            <city>Kyiv</city>
+            <street>Berdychivska</street>
+            <building>90</building>
+        </address>
+        <passport>
+            <series>OO</series>
+            <number>909090</number>
+            <taxpayer_number>9090908978</taxpayer_number>
+        </passport>
+    </client>
+</clients>
