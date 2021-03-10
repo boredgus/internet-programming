@@ -2,8 +2,7 @@
 <!DOCTYPE clients SYSTEM "clients.dtd">
 <?xml-stylesheet href="style1.7.css" type="text/css"?>
 <clients>
-    <client>
-        <id>1</id>
+    <client id="1">
         <initials>
             <name>Daryna</name>
             <surname>Kharchenko</surname>
@@ -19,8 +18,7 @@
             <taxpayer_number>1234567890</taxpayer_number>
         </passport>
     </client>
-    <client>
-        <id>2</id>
+    <client id="2">
         <initials>
             <name>Ivan</name>
             <surname>Ivanov</surname>
@@ -36,8 +34,7 @@
             <taxpayer_number>9887765456</taxpayer_number>
         </passport>
     </client>
-    <client>
-        <id>3</id>
+    <client id="3">
         <initials>
             <name>Petro</name>
             <surname>Petrov</surname>
@@ -53,8 +50,7 @@
             <taxpayer_number>9832564323</taxpayer_number>
         </passport>
     </client>
-    <client>
-        <id>4</id>
+    <client id="4">
         <initials>
             <name>Elizaveta</name>
             <surname>Pavlova</surname>
