@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lw1.8</title>
+</head>
+<body>
+    <div class="options">
+        <button id="clear">Clear</button>
+        <button id="id1">Get client with id 1</button>
+        <button id="all">Get all clients</button>
+        <button id="addresses">Get all addresses</button>
+    </div>
+    <div class="container"></div>
+    <script>
+        window.onload = function () {
+            function getByXpath(xpath) {
+                let xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState === 4 && this.status === 200) {
+                        const parser = new DOMParser();
+                        const xml = parser.parseFromString(this.responseText, "application/xml");
+                        let nodes = xml.evaluate(xpath, xml, null, XPathResult.ANY_TYPE, null);
+                        let result = nodes.iterateNext();
+                        let txt = "";
+                        while (result) {
+                            txt += "<br>" + result.outerHTML + "<br>";
+                            result = nodes.iterateNext();
+                        }
+                        document.querySelector(".container").innerHTML = txt;
+                    }
+                }
+                const xmlFilePath = "https://raw.githubusercontent.com/boredgus/internet-programming/master/lw1.7/lw1.7.xml";
+                xhttp.open('GET', xmlFilePath, true);
+                xhttp.send();
+            }
+            document.querySelector("#clear").addEventListener("click", () => {
+                document.querySelector(".container").innerHTML = "";
+            }, true)
+            document.querySelector("#id1").addEventListener("click", () => {
+                getByXpath("//client[id=1]");
+            }, true)
+            document.querySelector("#all").addEventListener("click", () => {
+                getByXpath("/clients/client");
+            }, true)
+            document.querySelector("#addresses").addEventListener("click", () => {
+                getByXpath("//address");
+            }, true)
+        }
+    </script>
+</body>
+</html>
