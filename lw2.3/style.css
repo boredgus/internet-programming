@@ -1,0 +1,64 @@
+body{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+body div:nth-child(n){
+    padding: 1em;
+}
+body div h2{
+    margin-top: 0;
+}
+.task1{
+    border-right: 3px solid green;
+}
+.task1 .calendar table{
+    margin:  0 auto;
+}
+.task1 .calendar thead{
+    font-size: .8em;
+    color: #0a2c0a;
+}
+.task1 .calendar td.active{
+    text-align: center;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.task1 .calendar td.today{
+    background-color: #93ca8b;
+}
+.task1 .calendar td.weekend{
+    background-color: #d4d4d4;
+}
+.task1 button{
+    display: block;
+    margin:  0 auto;
+}
+h3.month{
+    text-align: center;
+    margin-bottom: 0;
+}
+.task1 .multiplication table{
+    border: 3px solid red;
+    background-color: rgb(22, 99, 22);
+    border-radius: 3px;
+    margin: 1em auto 0;
+}
+.task1 .multiplication td{
+    background-color: #9dc7e9;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+.task1 .multiplication td.cursive{
+    font-style: italic;
+    font-weight: bolder;
+}
+.task2 .functionTask td, .task2 .functionTask th{
+    text-align: center;
+    padding: 5px 10px;
+}
+.task2 .higher{
+    font-style: italic;
+    font-weight: bolder;
+}
